@@ -4,6 +4,7 @@ Feature: Change and verify page language
     Given Navigate To the bank's website
     Then  Verify that you are on their website
 
+  @SmokeTest
   Scenario: Change language
     Given Change Language
     Then  Verify that the page language has changed

@@ -14,7 +14,7 @@ public class DialogContent extends Parent {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
-    @FindBy(css = "[class='all-campaign button-text']")
+    @FindBy(xpath = "//div[@class='owl-dots']//*[text()='Tüm Kampanyalar']")
     private WebElement campaigns;
 
     @FindBy(css = "[id='pageh1']")

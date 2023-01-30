@@ -38,7 +38,7 @@ public class GWD {
                 // buralara diger browserleri ekleyecegiz
 
                 case "firefox":
-                    //System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
+                    // System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
                     WebDriverManager.firefoxdriver().setup();
                     threadDriver.set(new FirefoxDriver());
                     break;
