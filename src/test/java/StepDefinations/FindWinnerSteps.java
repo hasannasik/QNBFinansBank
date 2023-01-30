@@ -1,6 +1,7 @@
 package StepDefinations;
 
 import Pages.DialogContent;
+import Utilities.ExcelUtility;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -14,7 +15,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-public class FindWinnerSteps {
+public class FindWinnerSteps{
+
     DialogContent dc = new DialogContent();
 
     XSSFWorkbook workbook = new XSSFWorkbook();
@@ -39,7 +41,10 @@ public class FindWinnerSteps {
     }
 
     @Then("Print the winners in excel")
-    public void printTheWinnersInExcel() throws IOException {
+    public void printTheWinnersInExcel()  throws IOException {
+
+
+
         List<WebElement> kazananlar=dc.results;
 
         for (int i = 0; i < kazananlar.size(); i++) {

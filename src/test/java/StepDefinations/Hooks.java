@@ -26,7 +26,7 @@ public class Hooks {
         DateTimeFormatter dateTimeFormatter=DateTimeFormatter.ofPattern("dd_MM_YYHHmmss");
         // senaryolarin sonuclarini bir excel formatinda yazdirmak istiyorum
 
-        ExcelUtility.writeToExcel("src/test/java/ApachePOI/resource/ScenarioStatus.xlsx",
+        ExcelUtility.writeToExcel("src/test/java/ExcelReport.xlsx",
                 scenario,GWD.getThreadBrowserName(), localDateTime.format(dateTimeFormatter));
 
 

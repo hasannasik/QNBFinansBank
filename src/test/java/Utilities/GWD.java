@@ -68,11 +68,11 @@ public class GWD {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        if (threadDriver.get() != null) {
+        if (threadDriver.get() != null) { // hat dolu ise
             threadDriver.get().quit();
-            WebDriver driver = threadDriver.get();
+            WebDriver driver = threadDriver.get(); // null degeri atamak icin
             driver=null;
-            threadDriver.set(driver);
+            threadDriver.set(driver); // null a esitlendi
         }
     }
 
